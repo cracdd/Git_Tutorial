@@ -7,6 +7,15 @@ public class UserController {
 
 		return "user/login";
 	}
-
+	@RequestMapping("/user/insert.do")
+	public String insert() {
+		logger.info("login: insert");
+		return "user/insert";
+	}
+	@RequestMapping("/user/update.do")
+	public String update() {
+		logger.info("login: update");
+		return "user/update";
+	}
 
 }
